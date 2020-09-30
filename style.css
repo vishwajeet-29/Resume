@@ -10,24 +10,23 @@ body{
     font-family: sans-serif;
 }
 
+/* Setting Right Pane */
 .profile-img{
     width: 35%;
     float: right;
-    /* outline: none; */
 }
 
 .profile-img img
 {
     width: 100%;
     height: 140%;
-    /* outline: none; */
-    /* border: 3px solid white; */
     outline: 5px solid white;
   outline-offset: -4px;
 }
 
+/* Setting Left Pane */
 .profile-info{
-     width: 65%;     /*profile-img + profile-info width = 40 + 60 = 100% */
+     width: 65%;     /*profile-img + profile-info width = 35 + 65 = 100% */
      height: 100vh;
      float: left;
      padding: 0 30px;
@@ -45,11 +44,13 @@ body{
     margin-left: 15px;
 }
 
+/* my name */
 .profile-info h1{
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
+/* setting icons of linkedin, github, hackerrank */
 .social-media img{
     height: 40px;
     margin-right: 15px;
@@ -60,6 +61,7 @@ body{
     margin-left: 15px;
 }
 
+/* setting top nav bar */
 .nav{
     overflow: hidden;
     background-color: rgb(197, 195, 195);
@@ -67,12 +69,10 @@ body{
     top: 0;
     text-align: center;
     position: fixed;
-    /* margin-left: -30px; */
   }
 .nav a {
   float: left;
   padding: 10px 20px;
-  /* color: white; */
   color: black;
   text-decoration: none;
   font-size: 17px;
@@ -84,21 +84,22 @@ body{
     color: black; 
   }
 
-
-
-
-
+/* Setting all headings like skills, projects, contact, etc. */
 .profile-info h2{
     margin-top: 50px;
     margin-bottom: 15px;
 }
 
-.expertise img{
+/* Setting icons for skills */
+.expertise img
+{
     height: 50px;
     margin: 5px;
 }
 
-.expertise, .education{
+/* Setting div block of each section under the h2*/
+.expertise, .education
+{
     display: inline-block;
     width: 28%;
     padding: 30px 0;
@@ -108,15 +109,15 @@ body{
     transition: 1s;
 }
 
+/* Div block sections will be highlighted/zoom on hover */
 .expertise:hover, .strengths:hover, .education:hover, .achievements:hover, .volunteer:hover
 {
-    /* background-color: blanchedalmond;
-    box-shadow: 0 0 15px 1px #f10707; */
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
 }
 
+/* Setting div block of each section under the h2*/
 .strengths, .achievements, .volunteer
 {
     display: inline-block;
@@ -126,7 +127,10 @@ body{
     box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18);
     transition: 1s;
 }
-.expertise li{
+
+/* Setting list under projects */
+.expertise li
+{
     margin-left: 25px;
 }
 
@@ -136,23 +140,20 @@ body{
     text-align: justify;
 }
 
-.expertise small{
+.expertise small
+{
     padding-top: 10px;
     display: block;
 }
 
-/* .projects img{
-    width: 31%;
-    padding: 4px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-} */
-
-.form-box{
+/* form box for Contact details */
+.form-box
+{
     margin-top: 30px;
 }
 
-.input-group input{
+.input-group input
+{
     width: 45%;
     border: 0;
     outline: none !important;
@@ -162,7 +163,8 @@ body{
     background: #fff;
 }
 
-.text-area textarea{
+.text-area textarea
+{
     width: 95%;
     border: 0;
     outline: none !important;
@@ -171,7 +173,8 @@ body{
     background: #fff;
 }
 
-.submit-btn{
+.submit-btn
+{
     border: 0;
     outline: none !important;
     padding: 10px 20px;
@@ -181,30 +184,28 @@ body{
     color: #fff;
 }
 
-.contact img{
+/* setting up gmail & mobile div */
+.contact img
+{
     width: 20px;
     margin: -5px 10px;
 }
 
-/* .contact span{
-    margin: 5%;
-} */
-
-.contact{
+.contact
+{
     margin: 1% 0 2% 25%;
-    /* text-align: center; */
     width: 100%;
     display: flex;
 }
 
- .gmail{
+.gmail
+{
     margin-right: 40px;
-}/*
-.mobile{
-    text-align: right;
-} */
+}
 
-.copyright{
+/* Last line of page i.e. Footer */
+.copyright
+{
     text-align: center;
     margin-bottom: 20px;
     font-size: 10px;
@@ -219,10 +220,12 @@ body{
         width: 100%;
         overflow: inherit;
     }
+
     .profile-img
     {
         width: 100%;
     }
+
     .expertise, .achievements, .volunteer, .strengths
     {
         width: 95%;
@@ -231,31 +234,16 @@ body{
 
     .expertise img
     {
-        /* height: 8%; */
         margin: 10px 0;
     }
 
-    /* .projects img
-    {
-        width: 47%;     
-         2 images in 1 row
-    } */
-    
-    /* span
-    {
-        display: block;
-    } */
     .contact{
         display: block;
         margin: 0;
-        /* text-align: center; */
     }
 
-    /* .navbar a {
-        float: none;
-        display: block;
-      } */
-      .nav{
-          display: none;
-      }
+    .nav
+    {
+        display: none;
+    }
 }
