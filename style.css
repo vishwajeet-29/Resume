@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #efefef;
+    font-family: sans-serif;
+}
+
+.profile-img{
+    width: 35%;
+    float: right;
+    /* outline: none; */
+}
+
+.profile-img img
+{
+    width: 100%;
+    height: 140%;
+    /* outline: none; */
+    /* border: 3px solid white; */
+}
+
+.profile-info{
+     width: 65%;     /*profile-img + profile-info width = 40 + 60 = 100% */
+     height: 100vh;
+     float: left;
+     padding: 0 30px;
+     overflow: scroll;  /*to scroll left pane*/
+     overflow-x: hidden;    /*to hide horizontal scroll bar*/
+     /* overflow-y: hidden;  /*If we use it then overflow effect will be gone*/
+}
+
+/* to hide vertical scroll bar while persisting scroll bar effect */
+.profile-info::-webkit-scrollbar{
+    width: 0px;
+}
+
+.objective{
+    margin-left: 15px;
+}
+
+.profile-info h1{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.social-media img{
+    height: 40px;
+    margin-right: 15px;
+}
+
+.social-media{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.nav{
+    overflow: hidden;
+    background-color: rgb(197, 195, 195);
+    width: 65%;
+    top: 0;
+    text-align: center;
+    position: fixed;
+    /* margin-left: -30px; */
+  }
+.nav a {
+  float: left;
+  padding: 10px 33.25px;
+  /* color: white; */
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+    color: black; 
+  }
+
+
+
+
+
+.profile-info h2{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.expertise img{
+    height: 50px;
+    margin: 5px;
+}
+
+.expertise, .education{
+    display: inline-block;
+    width: 28%;
+    padding: 30px 0;
+    margin: 2%;
+    text-align: center;
+    box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18);
+    transition: 1s;
+}
+
+.expertise:hover, .strengths:hover, .education:hover, .achievements:hover, .volunteer:hover
+{
+    /* background-color: blanchedalmond;
+    box-shadow: 0 0 15px 1px #f10707; */
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.strengths, .achievements, .volunteer
+{
+    display: inline-block;
+    width: 38%;
+    padding: 30px;
+    margin: 2%;
+    box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18);
+    transition: 1s;
+}
+.expertise li{
+    margin-left: 25px;
+}
+
+.achievements
+{
+    width: 50%;
+    text-align: justify;
+}
+
+.expertise small{
+    padding-top: 10px;
+    display: block;
+}
+
+/* .projects img{
+    width: 31%;
+    padding: 4px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+} */
+
+.form-box{
+    margin-top: 30px;
+}
+
+.input-group input{
+    width: 45%;
+    border: 0;
+    outline: none !important;
+    padding: 2%;
+    margin: 2%;
+    display: inline-block;
+    background: #fff;
+}
+
+.text-area textarea{
+    width: 95%;
+    border: 0;
+    outline: none !important;
+    padding: 2%;
+    margin: 2%;
+    background: #fff;
+}
+
+.submit-btn{
+    border: 0;
+    outline: none !important;
+    padding: 10px 20px;
+    margin: 2%;
+    background: #2ab0ff;
+    cursor: pointer;    /*when we hover cursor on button, cursor will change to hand*/
+    color: #fff;
+}
+
+.contact img{
+    width: 20px;
+    margin: -5px 10px;
+}
+
+/* .contact span{
+    margin: 5%;
+} */
+
+.contact{
+    margin: 1% 0 2% 25%;
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+}
+
+ .gmail{
+    margin-right: 40px;
+}/*
+.mobile{
+    text-align: right;
+} */
+
+.copyright{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+/* Now do some fun to make our website responsive */
+
+@media only screen and (max-width:900px)
+{
+    .profile-info
+    {
+        width: 100%;
+        overflow: inherit;
+    }
+    .profile-img
+    {
+        width: 100%;
+    }
+    .expertise, .achievements, .volunteer, .strengths
+    {
+        width: 95%;
+        margin-bottom: 10%;
+    }
+
+    .expertise img
+    {
+        /* height: 8%; */
+        margin: 10px 0;
+    }
+
+    /* .projects img
+    {
+        width: 47%;     
+         2 images in 1 row
+    } */
+    
+    /* span
+    {
+        display: block;
+    } */
+    .contact{
+        display: block;
+        margin: 0;
+        /* text-align: center; */
+    }
+
+    /* .navbar a {
+        float: none;
+        display: block;
+      } */
+      .nav{
+          display: none;
+      }
+}
